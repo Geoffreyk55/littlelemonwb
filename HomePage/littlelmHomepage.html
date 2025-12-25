@@ -1,0 +1,274 @@
+<!--LLM home page -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Little Lemon • Mediterranean Restaurant</title>
+  <meta name="description" content="Little Lemon is a family-owned Mediterranean restaurant serving fresh, seasonal dishes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Markazi+Text:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="site-header.css" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <!-- Skip link little lemon for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    
+    <div class="container header__inner">
+      <a class="logo" href="/" aria-label="Little Lemon home">
+        <img src="assets/Logob.png" alt="Little Lemon" height="40" />
+      </a>
+
+      <!-- Mobile nav toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav__toggle" aria-label="Open menu" />
+      <label class="nav__hamburger" for="nav-toggle" aria-controls="site-nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav id="site-nav" class="nav" role="navigation" aria-label="Primary">
+        <ul class="nav__list">
+
+          <li><a href="http://127.0.0.1:3001/REACT Advced/littlelemonWb/Confirmation/Confirmation.html?serverWindowId=2d6659ec-0673-43ec-9a6b-329038b5a5b0"
+          class="nav__link" href="#Confirmation">Confirmation</a></li>
+          <li><a class="nav__link" href="#menu">Menu</a></li>
+          
+          <li><a href="http://127.0.0.1:3001/REACT Advced/littlelemonWb/OrderBooking/Orderbooking.html?serverWindowId=2d6659ec-0673-43ec-9a6b-329038b5a5b0"
+          class="nav__link" href="#OrderBooking">OrderBooking</a></li>
+          <li><a class="nav__link" href="#login">Login</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+ 
+  </nav>
+
+  <!-- Main title -->
+  <main id="main">
+   
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 id="hero-title" class="brand">❉ Little Lemon ❉</h1>
+          <p class="brand-sub">❉ Chicago Restaurant ❉</p>
+          <p class="brand-sub">Welcome</p>
+        
+          <p class="hero__text">
+            We’re a family-owned Mediterranean restaurant focused on traditional recipes served with a modern twist.
+          </p>
+          <a class="btn btn--primary" href="#reservations">Reserve a table</a>
+        </div>
+        <figure class="hero__image">
+          <img src="assets/Baked-Chiken.png" alt="Chef’s special plated dish" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- Highlights - Specials -->
+    <section class="highlights" id="menu" aria-labelledby="highlights-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="highlights-title">This week’s specials!</h2>
+          <a class="btn btn--secondary" href="#order">Online menu</a>
+        </div>
+
+        <ul class="card-grid">
+          <li class="card">
+            <img class="card__img" src="assets/Greek-Salad.png" alt="Greek Salad" />
+            <div class="card__body">
+              <div class="card__title-row">
+                <h3 class="card__title">Greek Salad</h3>
+                <span class="price">$12.99</span>
+              </div>
+              <p class="card__text">
+                Crisp lettuce, peppers, olives, and our Chicago-style feta, served with crunchy garlic and rosemary croutons.
+              </p>
+              <a class="card__cta" href="#order" aria-label="Order Greek Salad">Order a delivery →</a>
+            </div>
+          </li>
+<!--Desserts -->
+<li class="card">
+  <img class="card__img" src="assets/Bruschetta.png" alt="Bruschetta" />
+  <div class="card__body">
+    <div class="card__title-row">
+      <h3 class="card__title">Bruschetta</h3>
+      <span class="price">$5.99</span>
+    </div>
+    <p class="card__text">
+      Grilled bread smeared with garlic and seasoned with salt and olive oil, topped with our fresh tomato mix.
+    </p>
+    <a class="card__cta" href="#order" aria-label="Order Bruschetta">Order a delivery →</a>
+  </div>
+</li>
+
+          <li class="card">
+            <img class="card__img" src="assets/lemon-dessert.png" alt="Lemon Dessert" />
+            <div class="card__body">
+              <div class="card__title-row">
+                <h3 class="card__title">Lemon Dessert</h3>
+                <span class="price">$4.99</span>
+              </div>
+              <p class="card__text">
+                Our signature lemon tart—bright, tangy, and perfectly balanced with a buttery crust.
+              </p>
+              <a class="card__cta" href="#order" aria-label="Order Lemon Dessert">Order a delivery →</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title">What our customers say</h2>
+        <ul class="testimonials__grid">
+          <li class="tcard">
+            <div class="tcard__rating" aria-label="Rating 5 out of 5">★★★★★</div>
+            <div class="tcard__person">
+              <img src="assets/user-1.png" alt="" />
+              <span>Maria S.</span>
+            </div>
+            <p class="tcard__text">Amazing flavors and super friendly staff. Must-try in the neighborhood!</p>
+          </li>
+          <li class="tcard">
+            <div class="tcard__rating" aria-label="Rating 4 out of 5">★★★★☆</div>
+            <div class="tcard__person">
+              <img src="assets/user-2.png" alt="" />
+              <span>Omar K.</span>
+            </div>
+            <p class="tcard__text">Loved the lemon dessert. Bright and refreshing finish.</p>
+          </li>
+          <li class="tcard">
+            <div class="tcard__rating" aria-label="Rating 5 out of 5">★★★★★</div>
+            <div class="tcard__person">
+              <img src="assets/user-3.png" alt="" />
+              <span>Sophia L.</span>
+            </div>
+            <p class="tcard__text">Cozy vibes and great specials—will be back soon!</p>
+          </li>
+          <li class="tcard">
+            <div class="tcard__rating" aria-label="Rating 4 out of 5">★★★★☆</div>
+            <div class="tcard__person">
+              <img src="assets/user-4.png" alt="" />
+              <span>Max P.</span>
+            </div>
+            <p class="tcard__text">Bruschetta is a winner. Super fresh.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__copy">
+          <h2 id="about-title">Little Lemon</h2>
+          <p class="brand-sub">Chicago</p>
+          <p>
+            Little Lemon is run by two Italian brothers who moved to the United States to pursue their shared dream of owning a restaurant.
+            Our menu is based on seasonal ingredients with a special focus on classic recipes that celebrate Mediterranean flavors.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="login">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/Logo.png" alt="Little Lemon" />
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <h3> Navigation</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#">OrderBooking</a></li>
+          <li><a href="#order">Order Online</a></li>
+          <li><a href="#login">Login</a></li>
+          <li><a href="#login">Confirmation</a></li>
+        </ul>
+      </nav>
+      <!-- React Router NavLink and Link example
+     
+		  <a href="file:///C:/Users/akouz/.vscode/JAVAScript/REACT%20Advced/littlelemonWb/Confirmation/Confirmation.html"
+		  class="i-phone-se-text-menu text3">Confirmation</a>
+      <nav>
+        <NavLink to="/" activeClassName="active">Home</NavLink>
+        <Link to="/about">About</Link>
+      </nav>  -->
+
+      <div class="footer__contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>123 Lemon St, Chicago, IL</li>
+          <li><a href="tel:+13125550123">+1 (312) 555-0123</a></li>
+          <li><a href="mailto:hello@littlelemon.com">hello@littlelemon.com</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <h3>Social Media</h3>
+        <ul class="social">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+          <li><a href="#" aria-label="Twitter/X">X</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">© <span id="year"></span> Little Lemon. All rights reserved.</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Little Lemon • Mediterranean Restaurant</title>
+  <meta name="description" content="Little Lemon is a family-owned Mediterranean restaurant serving fresh, seasonal dishes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Markazi+Text:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header - Nav -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="logo" href="/" aria-label="Little Lemon home">
+        <img src="assets/logob.png" alt="Little Lemon" height="40" />
+      </a>
+
+      <!-- Mobile navig toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav__toggle" aria-label="Open menu" />
+      <label class="nav__hamburger" for="nav-toggle" aria-controls="site-nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </header>
+  
+  <footer class="site-footer" id="login">
+    <p class="legal">© <span id="year"></span> Little Lemon. Geoffreyk55 rights reserved.</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
+<!--LLM web pages 75% completed -->

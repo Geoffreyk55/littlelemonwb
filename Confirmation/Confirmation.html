@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/global.css" />
+	<link rel="stylesheet" href="css/col.css" />
+	<link rel="stylesheet" href="css/form.css" />
+
+	<!--to set in line -->
+	<nav id="site-nav" class="nav" role="navigation" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="http://127.0.0.1:3001/REACT Advced/littlelemonWb/HomePage/littlelmHomepage.html?serverWindowId=e5f997ca-73d6-48b0-82ce-47973ef17a59"
+			class="nav__link is-active" href="#">Home</a></li>
+          <li><a href="http://127.0.0.1:3001/REACT Advced/littlelemonWb/OrderBooking/Orderbooking.html?serverWindowId=c28ae419-a6d9-47f7-a302-5ab39da4f858"
+            class="nav__link" href="#">toOrderBooking</a></li>
+        </ul>
+	</nav>
+	<!--styling nav list -->
+		<style>
+			.nav {
+			  background-color: #d3c8c8;
+			  overflow: hidden;
+			  justify-items: baseline;
+			}
+			.nav__list {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  display: flex;
+			  justify-content: center;
+			}
+			.nav__link {
+			  display: block;
+			  color: #111111;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-family: 'Inter', sans-serif;
+			  font-weight: 500;
+			}
+			.nav__link:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+			.nav__link.is-active {
+			  background-color: #bacc17;
+			  color: white;
+			}
+		</style>
+
+</header>
+ <!--body structure-->
+<body>
+	<div class="i-phone-se">
+		<img src="assets/i-phone-se-96de.png" class="i-phone-se-96de" />
+		<h2 class="i-phone-se-subtitle-little-lemon"> ❉LittleLemon❉   </h2>
+	
+		<h3 class="i-phone-se-subtitle i-phone-se-subtitle1">❉Chicago❉</h3>
+		<h3 class="i-phone-se-subtitle i-phone-se-subtitle1">Confirmation page</h3>
+		<p class="i-phone-se-text i-phone-se-text1">About little Lemon</p>
+		<p class="i-phone-se-text i-phone-se-text-we-are-a-family">
+			We are a Family owned Mediterranean restaurant , focused on traditional recipes served with a modern twist.
+		</p>
+		<h3 class="i-phone-se-subtitle i-phone-se-subtitle2">
+			Booking confirmed:<br />
+			Table for: <br />
+			<span class="sub-text">please enter identity:</span>
+		</h3>
+	</div>
+
+	<!--booking form-->
+<title>please Confirm</title>
+<style>
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 50px auto;
+    font-family: 'Inter', sans-serif;
+  }
+  label {
+    margin-top: 10px;
+  }
+  input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  h2 {
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: 5px solid #4CAF50;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  /* Pop out  styling */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 3px solid #4CAF50;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+  }
+  .popup button {
+    margin-top: 20px;
+    background-color: #4CAF50;
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+</style>
+<!-- Booking Form -->
+<h2>Please Confirm</h2>
+<form id="bookingForm">
+  <div>
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="first name" required>
+  </div>
+  <div>
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="last name" required>
+  </div>
+  <div>
+    <label for="phonenumber">Phone number:</label>
+    <input type="tel" id="phonenumber" name="phone number" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label><input type="checkbox" id="agree" name="agree" required> I agree to the cancellation policy</label>
+  </div>
+  <button type="submit">Confirm Now</button>
+</form>
+
+<!-- Pop out & overlay -->
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
+  <h3>Booking Confirmed 🎉</h3>
+  <p>Thank you! Your booking details have been submitted successfully.</p>
+  <button id="closePopup">Close</button>
+</div>
+
+<script>
+  const form = document.getElementById('bookingForm');
+  const popup = document.getElementById('popup');
+  const overlay = document.getElementById('overlay');
+  const closePopup = document.getElementById('closePopup');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // to prevent reload
+    overlay.style.display = 'block';
+    popup.style.display = 'block';
+  });
+
+  closePopup.addEventListener('click', function() {
+    overlay.style.display = 'none';
+    popup.style.display = 'none';
+    form.reset(); // clear the form
+  });
+</script>
+
+</body>
+<footer class="site-footer" id="login">
+    <p class="legal">©<span id="year"></span> Little Lemon Geoffreyk55 rights reserved.</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</html>
+<!--LLM web pages 75% completed -->

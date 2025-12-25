@@ -1,0 +1,30 @@
+/* nav.css */
+			.nav {
+			  background-color: #d3c8c8;
+			  overflow: hidden;
+			  justify-items: baseline;
+			}
+			.nav__list {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  display: flex;
+			  justify-content: center;
+			}
+			.nav__link {
+			  display: block;
+			  color: #333;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-family: 'Inter', sans-serif;
+			  font-weight: 500;
+			}
+			.nav__link:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+			.nav__link.is-active {
+			  background-color: #04AA6D;
+			  color: white;
+			}

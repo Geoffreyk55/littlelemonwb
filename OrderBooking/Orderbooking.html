@@ -1,0 +1,162 @@
+<!--LLM Order Booking Page -->
+<!DOCTYPE html>
+<html>
+<header>
+  <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/global.css" />
+	<link rel="stylesheet" href="css/booking-page.css" />
+	<link rel="stylesheet" href="css/form.css" />
+
+
+	<nav id="site-nav" class="nav" role="navigation" aria-label="Primary">
+        <ul class="nav__list">;
+          <li><a href="http://127.0.0.1:3001/REACT Advced/littlelemonWb/HomePage/littlelmHomepage.html?serverWindowId=6b8a946f-6450-4685-b9ae-2ffafc5f6c7b"
+			class="nav__link is-active" href="#">Home</a></li>
+          <li><a href="http://127.0.0.1:3001/REACT Advced/littlelemonWb/Confirmation/Confirmation.html?serverWindowId=18ecee61-f5d9-4e2e-a639-cb56ffafd479"
+            class="nav__link" href="#Confirmation">toConfirmation</a></li>
+        </ul>
+	</nav>
+<!-- Navigation bar styles -->
+		<style>
+			.nav {
+			  background-color: #f5f4f4;
+			  overflow: hidden;
+			  justify-items: baseline;
+			}
+			.nav__list {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  display: flex;
+			  justify-content: center;
+			}
+			.nav__link {
+			  display: block;
+			  color: #070707;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-family: 'Inter', sans-serif;
+			  font-weight: 500;
+			}
+			.nav__link:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+			.nav__link.is-active {
+			  background-color: #bacc17;
+			  color: white;
+			}
+		</style>
+
+</header>	
+<!-- Order Booking Page body -->
+<body>
+	<div class="booking-page-row-top">
+		<div class="booking-page-col-left">
+			<div class="booking-page-line booking-page-line1"></div>
+			<div class="booking-page-line booking-page-line2"></div>
+			<p class="booking-page-text-symbol">=</p>
+			<div class="booking-page-line booking-page-line3"></div>
+		</div>
+		
+		<img src="assets/booking-page-725c.png" class="booking-page-725c" />
+		<object data="assets/booking-page-graphic.svg" class="booking-page-graphic" type="image/svg+xml"></object>
+	</div>
+	
+	<div class="booking-page-col">
+		<h2 class="booking-page-subtitle-little-lemon">❉LITTLE LEMON❉ ❉Chicago❉</h2>
+		<h1 class="booking-page-title">OrderBooking page </h1>
+		<h2 class="booking-page-subtitle-find-a-table">Find a table for any occasion</h2>
+		<img src="assets/booking-page-lm-restau.png" class="booking-page-lm-restau" />
+	</div>
+
+<!-- Order Booking Form & styles -->
+	<form class="form">
+		<h1> Contact </h1>
+	<label>Email address</label>
+	<input type="email" />
+
+	<label for="booking_date">Date of Booking</label>
+	<input type="date" id="booking_date" name="booking_date"><br>
+  </div>
+  <div>
+	<label for="booking_time">time of Booking</label>
+	<input type="time" id="booking_time" name="booking_time"><br>
+  </div>
+  <div>
+	<label for="people">Number of Guests</label>
+	<input type="number" id="people" name="people" min="1" max="8"><br>
+  </div>
+  <div>
+	<label for="occasion">Occasion</label>
+	<input type="occasion" id="occasion" name="occasion" min="1" max="8"><br>
+  </div>
+  
+  <label>
+	<input type="checkbox" id="agree" name="agree" required> 
+		I agree to the cancellation policy	</label>  
+	<br><br>
+	<button type="submit">Book Now</button>
+	<a href="http://127.0.0.1:3000/REACT Advced/littlelemonWb/Confirmation/Confirmation.html?serverWindowId=18ecee61-f5d9-4e2e-a639-cb56ffafd479"
+            class="nav__link" href="#Book Now"></a>
+	</label>
+  </a>
+  
+	</form>
+<!-- Form styles -->
+	<style>
+		.form {
+		  display: flex;
+		  flex-direction: column;
+		  max-width: 320px;   /* ideal width */
+		  width: 100%;
+		  margin: 0 auto;     /*  centering */
+		}
+	  
+		label {
+		  margin-top: 10px;
+		}
+	  
+		input {
+		  padding: 8px;
+		  margin-top: 5px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		}
+	  
+		h1 {
+		  text-align: center;
+		  font-family: 'Inter', sans-serif;
+		  font-weight: 300;
+		  color: #aa9e9e;
+		}
+	  
+		button {
+		  margin-top: 20px;
+		  padding: 10px;
+		  background-color: #4CAF50;
+		  color: white;
+		  border: 1px solid #4CAF50;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		button:hover {
+		  background-color: #45a049;
+		}
+	  </style>
+
+	</form>
+</main>
+</body>
+<footer class="site-footer" id="login">
+    <p class="legal">© <span id="year"></span> Little Lemon. Geoffreyk55 rights reserved.</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</html>
+<!--LLM web pages 75% completed -->
