@@ -1,6 +1,6 @@
 # littlelemonwb
 
-HomePage web page: github.com/Geoffreyk55/littlelemonwb
+HomePage web page:     https://github.com/Geoffreyk55/littlelemonwb
 
 Confirmation web page: https://github.com/Geoffreyk55/littlelemonwb/tree/main/Confirmation
 
